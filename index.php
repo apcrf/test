@@ -9,6 +9,11 @@
 <?php
 	//********************************************************************************************
 
+	// Errors
+	error_reporting(E_ALL);
+	ini_set("display_errors", 1);
+
+	// Hello
 	echo "Hello world!";
 	echo "<br>\n";
 	echo "Привет мир!";
@@ -22,11 +27,8 @@
 
 	//**********************************************************************************************
 
+	// $dsn
 	require "config.php";
-
-	// Errors
-	error_reporting(E_ALL);
-	ini_set("display_errors", 1);
 
 	// Создаётся объект PDO
 	echo "***** Объект PDO: " . $dsn;
