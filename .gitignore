@@ -1,2 +1,4 @@
 # Google App Engine generated folder
 appengine-generated/
+# Configs with passwords
+*.passwords
