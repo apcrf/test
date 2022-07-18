@@ -69,6 +69,23 @@
 
 	//**********************************************************************************************
 
+	// $_SERVER
+	echo '***** $_SERVER';
+	echo "<br>\n";
+
+	foreach ( $_SERVER as $k=>$v ) {
+		echo $k . " --- " . $_SERVER[$k] . "<br>";
+	}
+/*
+	$keys = ["HTTP_USER_AGENT", "HTTP_SEC_CH_UA_PLATFORM", "HTTP_SEC_CH_UA", "USER_NICKNAME", "CURRENT_VERSION_ID","HTTP_X_APPENGINE_USER_EMAIL"];
+	foreach ( $keys as $k ) {
+		echo $k . " --- " . $_SERVER[$k] . "<br>";
+	}
+*/
+	echo "<br>\n";
+
+	//**********************************************************************************************
+
 	echo "***** cURL";
 	echo "<br>\n";
 
